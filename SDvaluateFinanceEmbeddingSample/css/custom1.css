@@ -1,0 +1,117 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body { 
+  font: 90%/1.4 Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #010101;
+}
+form {
+  width: 100%;
+  max-width: 600px;
+  padding: 2%;
+  background-color: #efefef;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+fieldset {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: auto;
+  padding: 2%;
+  border-radius: 4px;
+}
+.btn {
+    font-size: 14px;
+    color: #333;
+    background-color: #FFF;
+    display: inline-block;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    /* Verzögerung beim Klicken entfernen */
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    /* Text soll nicht auswählbar sein */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+.btn:hover {
+    background-color: #E6E6E6;
+    border-color: #ADADAD;
+}
+.btn:focus {
+    background-color: #a3a3a3;
+    border-color: #2D3674;
+    color: #fff;
+}
+/* geklickter Button ist :focus:active */
+.btn:active:focus {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+}
+.textfeld, .submitbutton {
+  margin: 2%;
+}
+.textfeld input {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+	-webkit-transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.textfeld select {
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+	-webkit-transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+
+.textfeld input:focus {
+    border-color: #66AFE9;
+    outline: 0px none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+
+.textfeld select:focus {
+    border-color: #66AFE9;
+    outline: 0px none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+}
+
+label {
+  cursor: pointer;
+}
+.textfeld label {
+  display: block;
+}
+@media screen and (min-width: 600px) {
+  .textfeld input, .submitbutton {
+     display: inline-block;
+     width: 70%;
+   }
+
+  .textfeld label {
+     display: inline-block;
+     margin: 0 2% 0 0;
+     vertical-align: top;
+     width: 20%;
+  }

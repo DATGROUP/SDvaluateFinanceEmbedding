@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formular</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  
+	<link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+	<link media="all" type="text/css" rel="stylesheet" href="css/custom.css">
+	<link media="all" type="text/css" rel="stylesheet" href="css/jquery-ui.min.css">
+	<link media="all" type="text/css" rel="stylesheet" href="css/custom1.css">
+	<link media="all" type="text/css" rel="stylesheet" href="css/custom2.css">
+	
+	<script type="text/javascript" src="http://gold.dat.de/FinanceLine/global/js/jquery/jquery1.js"></script>
+	<script type="text/javascript" src="http://gold.dat.de/FinanceLine/financeline/js/externalSphinxFL.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>	
+</head>
+
+  
+<body> 
+
+
+
+<div class="container" id="hide_01">
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+		<div class="jumbotron">
+			<h1>SilverDAT valuateFinance Integration der Oberfl&auml;che</h1>      
+			<p>Testen Sie die Integration der SilverDAT valuateFinance Oberfl&auml;che mit ihren eigenen Anmeldedaten</p>
+		</div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	
+		<fieldset> 
+		
+			<div class="textfeld">
+				<label for="productUrl">Host</label>
+				<select name="productUrl" id="productUrl" style="width: 734px;" >
+					<option value="http://www.dat.de/FinanceLine/">http://www.dat.de</option>
+					<option value="http://gold.dat.de/FinanceLine/">http://gold.dat.de</option>
+				</select>
+			</div>
+	<br>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	
+			<div class="textfeld">
+				<label for="customerNumber">Kundennummer</label>
+				<input type="text" name="customerNumber" id="customerNumber">
+			</div>
+			
+			<div class="textfeld">
+				<label for="customerLogin">Login</label>
+				<input type="text" name="customerLogin" id="customerLogin"  />
+			</div>
+			
+			<div class="textfeld">
+				<label for="customerSignature">Signatur</label>
+				<input type="text" name="customerSignature" id="customerSignature">
+			</div>
+			
+			<div class="textfeld">
+				<label for="interfacePartnerNumber">IP-Nummer</label>
+				<input type="text" name="interfacePartnerNumber" id="interfacePartnerNumber">
+			</div>
+			
+			<div class="textfeld">
+				<label for="interfacePartnerSignature">IP-Signatur</label>
+				<input type="text" name="interfacePartnerSignature" id="interfacePartnerSignature">
+			</div>
+		
+	<br>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+		
+			<div class="textfeld">
+				<label for="Land">Land</label>
+				<select name="Land" id="Land" style="width: 734px;" >
+					<option value="AT">AT</option>
+					<option value="BG">BG</option>
+					<option value="CZ">CZ</option>
+					<option value="DE">DE</option>
+					<option value="ES">ES</option>
+					<option value="FR">FR</option>
+					<option value="GR">GR</option>
+					<option value="HU">HU</option>
+					<option value="IT">IT</option>
+					<option value="NL">NL</option>
+					<option value="PL">PL</option>
+					<option value="RO">RO</option>
+					<option value="RU">RU</option>
+					<option value="SK">SK</option>
+					<option value="TR">TR</option>
+				</select>
+			</div>		
+	
+			<div class="textfeld">
+				<label for="Sprache">Sprache</label>
+				<select name="Sprache" id="Sprache" style="width: 734px;" >
+					<option value="bg_BG">bg_BG</option>
+					<option value="cs_CZ">cs_CZ</option>
+					<option value="de_DE">de_DE</option>
+					<option value="en_US">en_US</option>
+					<option value="es_ES">es_ES</option>
+					<option value="fr_FR">fr_FR</option>
+					<option value="hu_HU">hu_HU</option>
+					<option value="nl_NL">nl_NL</option>
+					<option value="it_IT">it_IT</option>
+					<option value="pl_PL">pl_PL</option>
+					<option value="ro_RO">ro_RO</option>
+					<option value="ru_RU">ru_RU</option>
+					<option value="sk_SK">sk_SK</option>
+					<option value="tr_TR">tr_TR</option>		
+				</select>
+			</div>
+		
+	<br>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+		
+			<div class="textfeld">
+				<label for="Aktion">Aktion</label>
+				<select name="Aktion" id="Aktion" style="width: 734px;" >
+					<option value="showEventList">showEventList</option>
+					<option value="createDossier">createDossier</option>
+					<option value="changeDossier">changeDossier</option>
+					<option value="importDossier">importDossier</option>
+				</select>
+			</div>
+		
+			<div class="textfeld">
+				<label for="Vorgangsart">Aktenzeichenart</label>
+				<select name="Aktenzeichenart" id="Aktenzeichenart" style="width: 734px;" >
+					<option value="evaluation">evaluation</option>
+					<option value="historical evaluation">historical evaluation</option>
+					<option value="compare">compare</option>
+				</select>	
+			</div>
+		
+			<div class="textfeld">
+				<label for="Aktenzeichen">Aktenzeichen</label>
+				<input type="text" name="Aktenzeichen" id="Aktenzeichen">
+			</div>
+		
+			<div class="textfeld">
+				<label for="Seite">Seite</label>
+				<select name="Seite" id="Seite" style="width: 734px;" >
+					<option value="model selection">model selection</option>
+					<option value="equipment selection">equipment selection</option>
+					<option value="hgv platforms selection">hgv platforms selection</option>
+					<option value="equipment selection">equipment selection</option>
+					<option value="vehicle condition">vehicle condition</option>
+					<option value="mounted tires evaluation">mounted tires evaluation</option>
+					<option value="not mounted tires evaluation">not mounted tires evaluation</option>
+					<option value="hgv platforms evaluation">hgv platforms evaluation</option>
+					<option value="new vehicle price">new vehicle price</option>
+					<option value="vehicle data">vehicle data</option>
+					<option value="evaluation">evaluation</option>
+					<option value="vehicle data">vehicle data</option>
+					<option value="residual value forecast">residual value forecast</option>
+					<option value="vehicle data">vehicle data</option>
+					<option value="historical evaluation">historical evaluation</option>
+					<option value="vehicle data">vehicle data</option>
+				</select>	
+			</div>  
+		
+	<br>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->			
+	   
+	</fieldset>	
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+	
+	<div id="Do_All_At_Once" class="button button-submit">Start!</div>
+		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+   <br>
+   <br>
+   
+  </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	
+<div class="container" id="hide_02">
+	
+		<br>
+		<br>
+		<br>
+		<div id="page-header" class="page-header"  >
+			<h1 id="header_footer_content">Example Page Header</h1>
+		</div>
+		
+		<div id="divSilverDAT"  width="100%" height="700px">
+				<iframe name="iframeSilverDAT" id="iframeSilverDAT" width="100%" height="100%"></iframe>
+		</div>
+		
+		<div id="page-footer" class="page-footer"  >
+			<h1 id="header_footer_content">Example Page Footer</h1>
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<div id="zurueck"  class="button button-submit">Zurück zur Eingabe!</div>
+		<br>
+		<br>
+	
+	  
+	<br>
+	<br>
+		
+</div>
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Beginn der für das Dokument relevanten Javascripte-->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Textfelder werden befüllt-->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<script>
+	$( document ).ready(function() {
+		$( "#productUrl" ).val( "http://gold.dat.de/FinanceLine/" );
+		$( "#customerNumber" ).val( "1300553" );
+		$( "#customerLogin" ).val( "Anwender01" );
+		$( "#customerSignature" ).val( "akEwRUF3TUNkOGJzQ3FqVzJTZGd5VE93N2tvTUk2MmtWOHhIaXVSRVc3c2M3cnFTakhTV2hBRFNW dHVhZVRhVw0Kc2o0d1BKTlVtYzNJRzd3TUtvcVRRSVZNT2FvPQ0KPVloRFE=" );
+		$( "#interfacePartnerNumber" ).val( "1300553" );
+		$( "#interfacePartnerSignature" ).val( "jA0EAwMCv7RRTaNA6TNgyStYodg5mQsgJsKv5PR0ZtQxPvsoOv6f0duXiVhrHc39ag3pqjeD3t+OKIPd" );
+		$( "#Land" ).val( "DE" );
+		$( "#Sprache" ).val( "de_DE" );
+		$( "#Aktion" ).val( "changeDossier" );
+		$( "#Aktenzeichen" ).val( "49518" );
+		$( "#Aktenzeichenart" ).val( "evaluation" );
+		$( "#Seite" ).val( "model selection" );
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Der Dom wird bezüglich der Anmeldedaten und seitenspezifischer Anmeldeparameter initialisiert-->		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->		
+		sphinx.hostUrl = "http://localhost:7080" + "/FinanceLinePostClient/client123456.html";
+		
+		sphinx.credentials = 	{
+					customerNumber : "1300553",
+					customerLogin : "Anwender01",
+					customerSignature : "akEwRUF3TUNkOGJzQ3FqVzJTZGd5VE93N2tvTUk2MmtWOHhIaXVSRVc3c2M3cnFTakhTV2hBRFNW dHVhZVRhVw0Kc2o0d1BKTlVtYzNJRzd3TUtvcVRRSVZNT2FvPQ0KPVloRFE=",
+					interfacePartnerNumber : "1300553",
+					interfacePartnerSignature : "jA0EAwMCv7RRTaNA6TNgyStYodg5mQsgJsKv5PR0ZtQxPvsoOv6f0duXiVhrHc39ag3pqjeD3t+OKIPd" 
+					};
+			
+		sphinx.params = 	{
+					datCountryIndicator : "DE",
+					locale : "de_DE",
+					action : "changeDossier",
+					dossierid : "49518",
+					type : "",
+					vxs : "",
+					page : "model selection",
+					workflow : "true",
+					save : "true"
+					};
+
+		sphinx.setProductUrl( 'http://gold.dat.de/FinanceLine/' );
+		sphinx.setIframeName( 'iframeSilverDAT' );
+		sphinx.onLoginFailure = function ( response ) {alert( 'DAT login failed!\nReason: ' + response.message );};
+		sphinx.onFinished = function () {sphinx.exportDossier();};
+		sphinx.afterExportDossier = function () {$( '#vxsResult' ).val( sphinx.response.xml ); sphinx.logout();};
+		
+		});
+</script>			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Beginn des JS-Teils, der per Button-Click relevant wird - es werden zunächst Funktionen deklariert, welche dann per Button-Click aufgerufen werden-->		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->				
+<script>
+function writeTextfieldValueToVariable() {
+	var customerNumber = $("#customerNumber").val().replace(/'/g, "\\'");
+	var customerLogin = $("#customerLogin").val().replace(/'/g, "\\'");
+	var customerSignature = $("#customerSignature").val().replace(/'/g, "\\'");
+	var interfacePartnerNumber = $("#interfacePartnerNumber").val().replace(/'/g, "\\'");
+	var interfacePartnerSignature = $("#interfacePartnerSignature").val().replace(/'/g, "\\'");
+	var Aktenzeichen = $("#Aktenzeichen").val().replace(/'/g, "\\'");
+	}			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Die Werte der Textfeldvariablen werden nun in den DOM hineingeschrieben-->		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+function addTextfieldVarToDom() {
+	sphinx.credentials.customerNumber = customerNumber.value;
+	sphinx.credentials.customerLogin = customerLogin.value;
+	sphinx.credentials.customerSignature = customerSignature.value;
+	sphinx.credentials.interfacePartnerNumber = interfacePartnerNumber.value;
+	sphinx.credentials.interfacePartnerSignature = interfacePartnerSignature.value;
+	sphinx.params.dossierid = Aktenzeichen.value;
+	}
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Per Navigation auf die zweite Seite werden alle Werte die in die Auswahllistenvariablen geschrieben wurden in den DOM geschrieben-->		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->		
+function addSelectfieldVarToDom() {
+	sphinx.params.datCountyIndicator = $( "#Land" ).val().replace(/'/g, "\\'"); 
+	sphinx.params.locale = $( "#Sprache" ).val().replace(/'/g, "\\'");
+	sphinx.params.action = $( "#Aktion" ).val().replace(/'/g, "\\'");
+	sphinx.params.type = $( "#Aktenzeichenart" ).val().replace(/'/g, "\\'");
+	sphinx.params.page = $( "#Seite" ).val().replace(/'/g, "\\'");
+	sphinx.productUrl =  $( "#productUrl" ).val().replace(/'/g, "\\'");
+	}			
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--Navigation zwischen der ersten und der zweiten Seite - gleichzeitig müssen die unten definierten Funktionen aufgerufen werden-->
+<!--Sprich die Werte aus den Textfeldern und den Auswahllisten werden in Variablen geschrieben und damit der DOM aktualisiert-->
+<!--Abschließend wird ein Dossier-Request versendet, bei dem die aktualisierten Damen aus dem Dom übertragen werden und ein iFrame im spezifizierten Div-Fenster erscheint-->		
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->	
+
+$("#Do_All_At_Once").click(function(){
+		$("#hide_01").hide();
+		$("#hide_02").show();
+		writeTextfieldValueToVariable();
+		addTextfieldVarToDom();
+		addSelectfieldVarToDom();
+		sphinx.sendDossierRequest();
+		});
+	
+$("#zurueck").click(function(){
+		$("#hide_01").show();
+		$("#hide_02").hide();
+		});
+</script>	
+
+</body>
+</html>
